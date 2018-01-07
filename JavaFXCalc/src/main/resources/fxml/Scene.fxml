@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.wsb.gd35433.calc.FXMLController">
+    <children>
+      <TextField fx:id="lcd" layoutX="34.0" layoutY="26.0" prefHeight="50.0" prefWidth="270.0" />
+      <Button layoutX="34.0" layoutY="88.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="1" />
+      <Button layoutX="107.0" layoutY="88.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="2" />
+      <Button layoutX="34.0" layoutY="161.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="4" />
+      <Button layoutX="180.0" layoutY="88.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="3" />
+      <Button layoutX="34.0" layoutY="234.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="7" />
+      <Button layoutX="107.0" layoutY="161.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="5" />
+      <Button layoutX="107.0" layoutY="234.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="8" />
+      <Button layoutX="180.0" layoutY="161.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="6" />
+      <Button layoutX="180.0" layoutY="234.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="9" />
+      <Button layoutX="34.0" layoutY="307.0" mnemonicParsing="false" onAction="#opr" prefHeight="50.0" prefWidth="50.0" text="+" />
+      <Button layoutX="107.0" layoutY="307.0" mnemonicParsing="false" onAction="#digit" prefHeight="50.0" prefWidth="50.0" text="0" />
+      <Button layoutX="180.0" layoutY="307.0" mnemonicParsing="false" onAction="#opr" prefHeight="50.0" prefWidth="50.0" text="-" />
+      <Button layoutX="253.0" layoutY="88.0" mnemonicParsing="false" onAction="#clr" prefHeight="123.0" prefWidth="50.0" text="Clear" />
+      <Button layoutX="253.0" layoutY="307.0" mnemonicParsing="false" onAction="#opr" prefHeight="50.0" prefWidth="50.0" text="/" />
+      <Button layoutX="253.0" layoutY="234.0" mnemonicParsing="false" onAction="#opr" prefHeight="50.0" prefWidth="50.0" text="*" />
+      <Button layoutX="34.0" layoutY="380.0" mnemonicParsing="false" onAction="#eql" prefHeight="50.0" prefWidth="270.0" text="=" />
+      <Label fx:id="helper" layoutX="34.0" layoutY="445.0" prefHeight="17.0" prefWidth="270.0" text="Ready" />
+    </children>
+</AnchorPane>
