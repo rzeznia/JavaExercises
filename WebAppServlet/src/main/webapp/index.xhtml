@@ -7,12 +7,11 @@
     </h:head>
     <h:body>
         Hello from Facelets
-        <form id="user-form" name="user-form" method="post" action="AppServlet">
-            <h2>Podaj swoję imię</h2>
-            Imie: <input type="text" name="name"/><br/>
-            Nazwisko: <input type="text" name="surname"/><br/>
-            <input type="submit" value="Wyślij"/>
-        </form>        
+        <h:form>
+                <h:inputText value="#{Site.imie}"/>
+                <h:commandButton action="#{Site.submit()}" value="Wykonaj"/>
+                <h:outputText value="#{Site.komunikat}"/>
+        </h:form>
     </h:body>
 </html>
 
