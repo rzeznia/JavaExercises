@@ -13,27 +13,23 @@ package com.wsb.webappservlet;
 import java.io.PrintWriter;
 import static java.lang.System.out;
 import javax.ws.rs.core.Response;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Site {
      public void Site(){};
-     public void setImie(String ImieGet)
-     {
-         this.Imie = ImieGet;
-     }
-     public String getImie()
-     {
-         return this.Imie;
-     }
+     public void submit()
+    {
+        komunikat = "Twoje imie to " + Imie + " Oraz nazwisko " + "Rzeźnik";  
+    }
+
      private String Imie;
+     private String komunikat;
      /**
      * Creates a new instance of Site
      */
-    public void submit()
-    {
-        out.println("<html><body>");
-        out.println("<h1>My" + Imie + "</h2>");
-        out.println("</body></html>");  
-    }
-
+    
     
 }
